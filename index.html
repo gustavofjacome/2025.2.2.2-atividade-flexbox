@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Oportunidades de trabalho em projetos de pesquisa e extensão do IFRN">
-    <meta name="keywords" content="IFRN, pesquisa, extensão, oportunidades, trabalho, projetos">
+    <meta name="keywords" content="IFRN, pesquisa, extensão, oportunidades, estágio, bolsas">
     <title>Oportunidades IFRN - Pesquisa e Extensão</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <h1>IFRN</h1>
-                    <span class="logo-subtitle">Oportunidades</span>
+                    <img src="images/ifrnlogo.svg" alt="Logo IFRN" class="logo-img">
+                    <span class="logo-subtitle">Portal de Oportunidades</span>
                 </div>
                 <nav class="nav">
                     <ul class="nav-list">
                         <li><a href="#inicio">Início</a></li>
-                        <li><a href="#oportunidades">Oportunidades</a></li>
+                        <li><a href="#oportunidades">Vagas Abertas</a></li>
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
@@ -29,148 +30,217 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero" id="inicio">
         <div class="container">
             <div class="hero-content">
-                <h2 class="hero-title">Construa seu Futuro com o IFRN</h2>
-                <p class="hero-subtitle">Descubra oportunidades em projetos de pesquisa e extensão</p>
-                <a href="#oportunidades" class="btn btn-primary">Explorar Oportunidades</a>
+                <h2 class="hero-title">Transforme conhecimento em prática</h2>
+                <p class="hero-subtitle">Conecte-se aos melhores projetos de Pesquisa, Extensão e Inovação do IFRN.</p>
+                <div class="hero-actions">
+                    <a href="#oportunidades" class="btn btn-primary">Ver Oportunidades <i class="fas fa-arrow-down"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Main Content - Opportunities Section -->
     <main class="main">
         <section class="opportunities" id="oportunidades">
             <div class="container">
                 <h2 class="section-title">Oportunidades Disponíveis</h2>
-                <p class="section-description">Explore projetos de pesquisa e extensão nas diversas áreas do conhecimento</p>
+                <p class="section-description">Confira os editais abertos para bolsistas e voluntários.</p>
 
                 <div class="cards-container">
-                    <!-- Card 1 - Exemplo -->
+                    
                     <article class="card">
-                        <div class="card-header">
-                            <span class="card-badge badge-pesquisa">Pesquisa</span>
+                        <div class="card-header border-extensao">
+                            <span class="card-badge badge-extensao"><i class="fas fa-microscope"></i> Extensão</span>
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Desenvolvimento de Aplicações Web</h3>
+                            <h3 class="card-title"><i class="fas fa-laptop-code"></i> MAIS INCRA</h3>
                             <p class="card-description">
-                                Projeto de pesquisa focado no desenvolvimento de sistemas web modernos
-                                utilizando tecnologias atuais e metodologias ágeis.
+                                Desenvolvimento de uma solução web para gestão de acervo do projeto MAIS INCRA utilizando React  
                             </p>
                             <div class="card-requirements">
-                                <h4>Requisitos:</h4>
+                                <h4><i class="fas fa-check-circle"></i> Requisitos:</h4>
                                 <ul>
-                                    <li>Cursando Informática ou áreas afins</li>
-                                    <li>Conhecimento em HTML, CSS e JavaScript</li>
-                                    <li>Disponibilidade de 20h semanais</li>
+                                    <li>Conhecimento em React</li>
+                                    <li>Conhecimento em JavaScript</li>
+                                    <li>Disponibilidade: 20h/semana</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-secondary">Saiba Mais</a>
+                            <a href="#" class="btn btn-outline">Ver Edital</a>
                         </div>
                     </article>
 
-                    <!-- Card 2 - Exemplo -->
                     <article class="card">
-                        <div class="card-header">
-                            <span class="card-badge badge-extensao">Extensão</span>
+                        <div class="card-header border-extensao">
+                            <span class="card-badge badge-extensao"><i class="fas fa-users"></i> Extensão</span>
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Inclusão Digital na Comunidade</h3>
+                            <h3 class="card-title"><i class="fas fa-hands-helping"></i> Inclusão Digital</h3>
                             <p class="card-description">
-                                Projeto de extensão voltado para levar conhecimentos de informática básica
-                                e cidadania digital para comunidades carentes.
+                                Projeto "Informática para Todos": capacitação de idosos no uso de smartphones e computadores.
                             </p>
                             <div class="card-requirements">
-                                <h4>Requisitos:</h4>
+                                <h4><i class="fas fa-check-circle"></i> Requisitos:</h4>
+                                <ul>
+                                    <li>Paciência e didática</li>
+                                    <li>Domínio de ferramentas Office</li>
+                                    <li>Disponibilidade aos sábados</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline">Ver Edital</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-header border-inovacao">
+                            <span class="card-badge badge-inovacao"><i class="fas fa-rocket"></i> Inovação</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-chart-line"></i> Análise de Dados</h3>
+                            <p class="card-description">
+                                Tratamento e visualização de dados educacionais para suporte à tomada de decisão na reitoria.
+                            </p>
+                            <div class="card-requirements">
+                                <h4><i class="fas fa-check-circle"></i> Requisitos:</h4>
+                                <ul>
+                                    <li>Python (Pandas/NumPy)</li>
+                                    <li>Conhecimento em SQL</li>
+                                    <li>Estatística básica</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline">Ver Edital</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-header border-pesquisa">
+                            <span class="card-badge badge-pesquisa"><i class="fas fa-microscope"></i> Pesquisa</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-robot"></i> Projeto LAICA</h3>
+                            <p class="card-description">
+                                Construção de protótipos autônomos para monitoramento ambiental no campus.
+                            </p>
+                            <div class="card-requirements">
+                                <h4><i class="fas fa-check-circle"></i> Requisitos:</h4>
+                                <ul>
+                                    <li>Arduino / ESP32</li>
+                                    <li>Eletrônica Básica</li>
+                                    <li>Linguagem C/C++</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline">Ver Edital</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-header border-ensino">
+                            <span class="card-badge badge-ensino"><i class="fas fa-book-reader"></i> Ensino</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-chalkboard"></i> Monitoria de Sistemas Digitais</h3>
+                            <p class="card-description">
+                                Auxílio aos alunos do 1º período nas disciplinas de Sistemas Digitais.
+                            </p>
+                            <div class="card-requirements">
+                                <h4><i class="fas fa-check-circle"></i> Requisitos:</h4>
                                 <ul>
                                     <li>Habilidades de comunicação</li>
                                     <li>Conhecimento básico em informática</li>
-                                    <li>Disponibilidade para atividades externas</li>
+                                    <li>Proatividade</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-secondary">Saiba Mais</a>
+                            <a href="#" class="btn btn-outline">Ver Edital</a>
                         </div>
                     </article>
 
-                    <!-- Card 3 - Exemplo -->
                     <article class="card">
-                        <div class="card-header">
-                            <span class="card-badge badge-pesquisa">Pesquisa</span>
+                        <div class="card-header border-extensao">
+                            <span class="card-badge badge-extensao"><i class="fas fa-users"></i> Extensão</span>
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Inteligência Artificial e Machine Learning</h3>
+                            <h3 class="card-title"><i class="fas fa-music"></i> NUART</h3>
                             <p class="card-description">
-                                Pesquisa em algoritmos de aprendizado de máquina aplicados a problemas
-                                reais da região.
+                                Organização de eventos culturais e produção audiovisual para o canal do campus.
                             </p>
                             <div class="card-requirements">
-                                <h4>Requisitos:</h4>
+                                <h4><i class="fas fa-check-circle"></i> Requisitos:</h4>
                                 <ul>
                                     <li>Conhecimento em Python</li>
                                     <li>Noções de estatística</li>
-                                    <li>Interesse em IA e dados</li>
+                                    <li>Trabalho em equipe</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-secondary">Saiba Mais</a>
+                            <a href="#" class="btn btn-outline">Ver Edital</a>
                         </div>
                     </article>
 
-                    <!-- Adicione mais cards aqui conforme sua pesquisa -->
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
         <section class="about" id="sobre">
             <div class="container">
-                <h2 class="section-title">Sobre o IFRN</h2>
-                <div class="about-content">
-                    <p>
-                        O Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN)
-                        é uma instituição de ensino público que oferece diversos cursos técnicos, graduações
-                        e pós-graduações.
-                    </p>
-                    <p>
-                        Os projetos de pesquisa e extensão são fundamentais para a formação dos estudantes,
-                        proporcionando experiência prática e contribuindo para o desenvolvimento da sociedade.
-                    </p>
+                <div class="about-flex">
+                    <div class="about-text">
+                        <h2 class="section-title text-left">Sobre o IFRN</h2>
+                        <p>
+                            O Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN)
+                            é referência em ensino público de qualidade. Nossos projetos de pesquisa e extensão 
+                            são a porta de entrada para o mercado de trabalho e para a carreira acadêmica.
+                        </p>
+                        <p>
+                            <strong>Por que participar?</strong> Além da bolsa-auxílio, você enriquece seu currículo,
+                            faz networking com professores e aplica na prática o que aprendeu em sala de aula.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer" id="contato">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>IFRN</h3>
                     <p>Instituto Federal do Rio Grande do Norte</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
                 <div class="footer-section">
-                    <h3>Links Úteis</h3>
+                    <h3>Acesso Rápido</h3>
                     <ul>
-                        <li><a href="https://portal.ifrn.edu.br/" target="_blank">Portal IFRN</a></li>
-                        <li><a href="https://portal.ifrn.edu.br/pesquisa" target="_blank">Pesquisa</a></li>
-                        <li><a href="https://portal.ifrn.edu.br/extensao" target="_blank">Extensão</a></li>
+                        <li><a href="https://portal.ifrn.edu.br/" target="_blank"><i class="fas fa-external-link-alt"></i> Portal IFRN</a></li>
+                        <li><a href="https://portal.ifrn.edu.br/editais" target="_blank"><i class="fas fa-file-alt"></i> Editais</a></li>
+                        <li><a href="https://suap.ifrn.edu.br/" target="_blank"><i class="fas fa-user-graduate"></i> SUAP</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Contato</h3>
-                    <p>Email: contato@ifrn.edu.br</p>
-                    <p>Telefone: (84) 4005-0000</p>
+                    <p><i class="fas fa-envelope"></i> dpppe@ifrn.edu.br</p>
+                    <p><i class="fas fa-phone"></i> (84) 4005-0000</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Natal - Central, RN</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 IFRN. Todos os direitos reservados.</p>
+                <p>&copy; 2025 IFRN. Desenvolvido para a disciplina de WebDesign.</p>
             </div>
         </div>
     </footer>
