@@ -329,156 +329,112 @@ img { max-width: 100%; display: block; }
     line-height: 1.8;
 }
 
-/* Footer */
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* =======
+   rodapé
+   ======= */
 .footer {
     background-color: var(--text-primary);
     color: white;
-    padding: var(--spacing-xl) 0 var(--spacing-md);
+    padding: 3rem 0 1rem;
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-lg);
-    margin-bottom: var(--spacing-lg);
+    gap: 2rem;
+    text-align: center;
 }
 
 .footer-section h3 {
-    margin-bottom: var(--spacing-sm);
-    font-size: var(--font-size-lg);
-}
-
-.footer-section p,
-.footer-section li {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: var(--font-size-sm);
-    margin-bottom: var(--spacing-xs);
-}
-
-.footer-section a {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--accent-color);
+    margin-bottom: 1rem;
 }
 
 .footer-section a:hover {
-    color: white;
     text-decoration: underline;
 }
 
-.footer-bottom {
-    text-align: center;
-    padding-top: var(--spacing-md);
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.6);
-    font-size: var(--font-size-sm);
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
-/* ===================================
-   TABLET - Media Query (768px+)
-   =================================== */
+.social-icons a {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.8rem;
+    color: #9e9e9e;
+}
+
+/* ==============
+   responsividade
+   ============== */
+
+/* tablet +768px */
 @media (min-width: 768px) {
-    /* Header */
     .header-content {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
     }
-    
+
     .logo {
-        text-align: left;
+        align-items: flex-start; 
     }
-    
+
     .nav-list {
-        flex-direction: row;
+        gap: 2rem;
     }
-    
-    /* Hero */
-    .hero {
-        padding: 5rem 0;
-    }
-    
+
     .hero-title {
-        font-size: var(--font-size-3xl);
+        font-size: 3rem;
     }
-    
-    /* Cards - 2 colunas */
+
+    /* card em 2 colunas */
     .cards-container {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: var(--spacing-lg);
     }
-    
+
     .card {
-        flex-basis: calc(50% - var(--spacing-lg) / 2);
+        flex-basis: calc(50% - 1rem); 
     }
-    
-    /* Footer */
+
     .footer-content {
         flex-direction: row;
+        text-align: left;
         justify-content: space-between;
     }
-    
-    .footer-section {
-        flex: 1;
+
+    .social-icons {
+        justify-content: flex-start;
     }
 }
 
-/* ===================================
-   DESKTOP - Media Query (1024px+)
-   =================================== */
+/* PC +1024px */
 @media (min-width: 1024px) {
-    /* Container */
     .container {
-        padding: 0 var(--spacing-lg);
+        padding: 0 2rem;
     }
-    
-    /* Header */
-    .logo h1 {
-        font-size: var(--font-size-3xl);
+
+    /* 3 colunas */
+    .card {
+        flex-basis: calc(33.333% - 1.34rem);
     }
-    
-    /* Hero */
+
     .hero {
         padding: 6rem 0;
     }
-    
-    .hero-title {
-        font-size: 3.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: var(--font-size-xl);
-    }
-    
-    /* Cards - 3 colunas */
-    .cards-container {
-        gap: var(--spacing-xl);
-    }
-    
-    .card {
-        flex-basis: calc(33.333% - var(--spacing-xl) * 2 / 3);
-    }
-    
-    /* Aumenta espaçamentos */
-    .opportunities {
-        padding: 5rem 0;
-    }
-    
-    .about {
-        padding: 5rem 0;
-    }
-}
-
-/* ===================================
-   EXTRA LARGE - Media Query (1440px+)
-   =================================== */
-@media (min-width: 1440px) {
-    .hero-title {
-        font-size: 4rem;
-    }
-    
-    /* Pode ajustar para 4 colunas se desejar */
-    /* .card {
-        flex-basis: calc(25% - var(--spacing-xl) * 3 / 4);
-    } */
-}
 }
