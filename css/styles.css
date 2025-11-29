@@ -158,122 +158,123 @@ img { max-width: 100%; display: block; }
     box-shadow: var(--shadow-md);
 }
 
-/* Main Content */
-.main {
-    padding: var(--spacing-xl) 0;
-}
-
-/* Opportunities Section */
+/* ===================================
+   oportunidades
+   =================================== */
 .opportunities {
-    padding: var(--spacing-xl) 0;
-    background-color: var(--background-secondary);
+    padding: 4rem 0;
 }
 
 .section-title {
-    font-size: var(--font-size-2xl);
-    font-weight: bold;
     text-align: center;
-    margin-bottom: var(--spacing-sm);
-    color: var(--primary-color);
+    font-size: 2rem;
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
 }
 
 .section-description {
     text-align: center;
     color: var(--text-secondary);
-    margin-bottom: var(--spacing-xl);
-    font-size: var(--font-size-lg);
+    margin-bottom: 3rem;
 }
 
-/* Cards Container - FLEXBOX */
+/* GRID FLEXBOX */
 .cards-container {
     display: flex;
-    flex-direction: column; /* Mobile: cards empilhados verticalmente */
-    gap: var(--spacing-lg);
+    flex-direction: column; /* no mobile fica Um abaixo do outro */
+    gap: 2rem;
 }
 
-/* Individual Card */
 .card {
-    background-color: white;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-    overflow: hidden;
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
     display: flex;
     flex-direction: column;
-    transition: var(--transition-base);
+    transition: var(--transition);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
 }
 
 .card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
 
 .card-header {
-    padding: var(--spacing-sm);
-    display: flex;
-    justify-content: flex-start;
+    padding: 1rem;
+    border-bottom: 1px solid var(--bg-body);
 }
+
+.border-pesquisa { border-top: 4px solid var(--badge-pesquisa); }
+.border-extensao { border-top: 4px solid var(--badge-extensao); }
+.border-inovacao { border-top: 4px solid var(--badge-inovacao); }
+.border-ensino   { border-top: 4px solid var(--badge-ensino); }
 
 .card-badge {
-    display: inline-block;
-    padding: var(--spacing-xs) var(--spacing-sm);
-    border-radius: var(--radius-sm);
-    font-size: var(--font-size-sm);
-    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
     color: white;
+    text-transform: uppercase;
 }
 
-.badge-pesquisa {
-    background-color: var(--badge-pesquisa);
-}
-
-.badge-extensao {
-    background-color: var(--badge-extensao);
-}
+.badge-pesquisa { background-color: var(--badge-pesquisa); }
+.badge-extensao { background-color: var(--badge-extensao); }
+.badge-inovacao { background-color: var(--badge-inovacao); }
+.badge-ensino   { background-color: var(--badge-ensino); }
 
 .card-body {
-    padding: var(--spacing-md);
-    flex-grow: 1;
+    padding: 1.5rem;
+    flex-grow: 1; 
 }
 
 .card-title {
-    font-size: var(--font-size-xl);
-    font-weight: bold;
-    margin-bottom: var(--spacing-sm);
-    color: var(--primary-color);
+    font-size: 1.25rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .card-description {
+    font-size: 0.95rem;
     color: var(--text-secondary);
-    margin-bottom: var(--spacing-md);
-    line-height: 1.6;
-}
-
-.card-requirements {
-    margin-top: var(--spacing-md);
+    margin-bottom: 1.5rem;
 }
 
 .card-requirements h4 {
-    font-size: var(--font-size-base);
-    margin-bottom: var(--spacing-xs);
-    color: var(--text-primary);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
 }
 
 .card-requirements ul {
-    list-style: disc;
-    padding-left: var(--spacing-md);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    list-style: none;
 }
 
 .card-requirements li {
-    color: var(--text-secondary);
-    font-size: var(--font-size-sm);
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.card-requirements li::before {
+    content: "•";
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-right: 0.5rem;
 }
 
 .card-footer {
-    padding: var(--spacing-md);
+    padding: 1.5rem;
+    background-color: #fafafa;
+    text-align: center;
     border-top: 1px solid var(--border-color);
-    display: flex;
-    justify-content: center;
 }
 
 /* About Section */
